@@ -1,4 +1,5 @@
-import React from 'react'; // This import is not needed here; remove it
+
+  import React from 'react'; // This import is not needed here; remove it
 import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
@@ -6,12 +7,15 @@ import nodemailer from 'nodemailer'; // Import nodemailer
 // import bodyParser from "body-parser"; // This can be removed if using express.json()
 
 dotenv.config();
+// console.log("EMAIL_USER:", process.env.EMAIL_USER);
+// console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json()); // Use express's built-in JSON parser
 
 // Nodemailer setup

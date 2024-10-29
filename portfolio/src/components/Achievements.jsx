@@ -40,9 +40,9 @@ const Achievements = () => {
     >
         {achievements.map((achievements,index) =>(
 
-            <Reveal>
+            <Reveal key = {index}>
             <motion.div 
-                key = {index}
+                
                 initial = "hidden"
                 whileInView ="visible"
                 viewport = {{once:false , amount : 0.3}}
