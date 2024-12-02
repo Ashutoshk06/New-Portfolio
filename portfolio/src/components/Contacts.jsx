@@ -21,11 +21,10 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://ashutosh-kumar-omega.vercel.app/api/send-email', { 
-
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -38,7 +37,9 @@ const Contacts = () => {
       console.error(error);
       setResponseMessage('An error occurred. Please try again later.');
     }
-  };
+};
+
+  
 
   return (
     <div className="px-6 max-w-[1000px] mx-auto md:my-12" id="contact">
