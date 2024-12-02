@@ -15,7 +15,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://ashutosh-kumar-omega.vercel.app', // Replace with your deployed frontend URL
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
 
 app.use(express.json()); // Use express's built-in JSON parser
 
