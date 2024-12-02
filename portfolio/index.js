@@ -16,9 +16,9 @@ const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://ashutosh-kumar-omega.vercel.app', // Replace with your deployed frontend URL
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type'],
+  origin: 'https://ashutosh-kumar-omega.vercel.app/', // Frontend URL
+  methods: ['GET', 'POST'], // Allowed methods
+  allowedHeaders: ['Content-Type'], // Allowed headers
 }));
 
 app.use(express.json()); // Use express's built-in JSON parser

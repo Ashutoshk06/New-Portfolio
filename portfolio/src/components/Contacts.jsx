@@ -21,7 +21,8 @@ const Contacts = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://ashutosh-kumar-omega.vercel.app/', {
+      const response = await fetch('https://ashutosh-kumar-omega.vercel.app/api/send-email', { 
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
