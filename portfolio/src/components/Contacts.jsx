@@ -18,26 +18,26 @@ const Contacts = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch('/api/send-email', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify(formData),
+//       });
 
-      if (response.ok) {
-        setResponseMessage('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setResponseMessage('Failed to send message. Please try again.');
-      }
-    } catch (error) {
-      console.error(error);
-      setResponseMessage('An error occurred. Please try again later.');
-    }
-};
+//       if (response.ok) {
+//         setResponseMessage('Message sent successfully!');
+//         setFormData({ name: '', email: '', message: '' });
+//       } else {
+//         setResponseMessage('Failed to send message. Please try again.');
+//       }
+//     } catch (error) {
+//       console.error(error);
+//       setResponseMessage('An error occurred. Please try again later.');
+//     }
+// };
 
   
 
@@ -65,7 +65,8 @@ const Contacts = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="max-w-6xl p-5 md:p-12" id="form">
+          <form action="https://formsubmit.co/ashutoshkr042@gmail.com" method="POST" 
+          className="max-w-6xl p-5 md:p-12" id="form">
             <p className="text-gray-100 font-bold text-xl mb-2">Let’s connect!</p>
             <input
               type="text"
