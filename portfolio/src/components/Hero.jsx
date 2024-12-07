@@ -129,6 +129,8 @@ export const Hero = () => {
                 <DiReact className="text-blue-500 mx-2" />
                 <TbBrandNodejs className="text-green-500 mx-2" />
                 <SiExpress className="text-white mx-2" />
+                <DiMongodb className="text-green-500 mx-2" />
+
             </div>
         </motion.div>
         <div className="absolute inset-0 hidden md:block">

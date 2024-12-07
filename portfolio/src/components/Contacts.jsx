@@ -48,9 +48,10 @@ const Contacts = () => {
           <div>
             <div className="text-gray-300 my-3">
               <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
-              <p className="text-justify leading-7 w-11/12">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit...
-              </p>
+              <p className="text-justify m-0 leading-normal max-w-[90%]">
+  I am a 5th-semester student at Dayananda Sagar College of Engineering, passionate about technology, problem-solving, and software development. I enjoy tackling challenges and building impactful solutions.
+</p>
+
             </div>
 
             <div className="flex mt-10 items-center gap-7">

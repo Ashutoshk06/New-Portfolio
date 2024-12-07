@@ -13,21 +13,21 @@ const projects = [
     title: "PG PERFECT",
     description: "A generalised pg management and accommodation software solution to handle all the tasks in pg management facilitated by rent collection and payment option",
     links: "#",
-    github: "#"
+    github: "https://github.com/Ashutoshk06/pg_perfect"
   },
   {
     img: Elearning,
     title: "Elearning",
     description: "A one-stop solution for all educators and students to learn new technology. In this project, educators can upload and sell their courses, and students can purchase the courses.",
     links: "#",
-    github: "#"
+    github: "https://github.com/Ashutoshk06/E-Learning"
   },
   {
     img: airline,
     title: "Airline Booking System",
     description: "This project is the backend service for Airline Ticket Booking with a reminder service before flight timings.",
     link: "#",
-    github: "#"
+    github: "https://github.com/Ashutoshk06/airline-booking-system"
   },
   {
     img: tweet,
